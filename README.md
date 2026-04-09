@@ -48,15 +48,12 @@ Structured retrieval-ready storage
 This ensures higher accuracy during answer generation.
 
 Project Structure:
-rag-copilot/
+project/
 │
-├── data/
-│   ├── sample.pdf
-│   ├── sample.txt
-│   └── sample.csv
-│
-├── chroma_db/
-│
-├── eg.py
-├── requirements.txt
-└── README.md
+├── assets/               # Stores static files like images, logos, etc.
+├── components/           # Reusable UI blocks (navbar.py, footer.py, hero.py)
+├── pages/                # Individual app screens (home.py, chat.py, upload.py, history.py)
+├── backend/              # AI and RAG logic (rag.py)
+├── state/                # Reflex state management (rag_state.py)
+├── documents/            # Temporary storage for uploaded PDF/TXT files
+└── app.py                # Main entry point that ties pages and components together
